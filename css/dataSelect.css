@@ -1,0 +1,171 @@
+.timeSelectBox{
+	position: fixed;
+	width: 100%;
+	height: 238px;
+	background: #f0f2f3;
+	bottom: 0;
+	z-index: 999;
+}
+.hidden{
+	display: none;
+}
+.zmask{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	/*background: #000;*/
+	opacity: .6;
+	top: 0;
+	z-index: 10;
+}
+.z-header{
+	position: relative;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #2f89f9;
+	border-bottom: 1px solid #967B7B;
+}
+.z-header span{
+	position: absolute;
+	width: 100px;
+}
+.z-header-l{
+	left: 10px;
+}
+.z-header-r{
+	right: 10px;
+	color: #2f89f9;
+}
+.contain{
+	width: 100%;
+	height: 180px;
+	overflow: hidden;
+}
+.ztmod,.zmod{
+	position: relative;
+	float: left;
+	width: 33%;
+	height: 100%;
+	overflow: hidden;
+}
+.zmod ul{
+	position: absolute;
+	left: 50%;
+	width: 70px;
+	padding: 72px 0;
+}
+.zmod ul li{
+	width: 100%;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+}
+.zcurrent{
+	font-size: 30px;
+	color:#2f89f9;
+}
+.zt-hm{
+	width: 49%;
+}
+ul.zt-hour{
+	width: 100px;
+	margin-left: -20px;
+}
+ul.zt-mins{
+	width: 100px;
+	margin-left: -80px;
+}
+.z-year{
+  margin-left: -17px;
+}
+.z-day{
+  margin-left: -55px;
+}
+.z-month{
+  margin-left: -30px;
+}
+.fh{
+	position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -13px;
+  margin-left: -9px;
+  font-size: 37px;
+  color: #2f89f9;
+}
+.zfadeInUp {
+	-webkit-animation-duration: .3s;
+  				animation-duration: .3s;
+  -webkit-animation-fill-mode: both;
+  				animation-fill-mode: both;
+  -webkit-animation-name: zfadeInUp;
+  				animation-name: zfadeInUp;
+}
+@-webkit-keyframes zfadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes zfadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.zfadeOutDown {
+	-webkit-animation-duration: .3s;
+  				animation-duration: .3s;
+  -webkit-animation-fill-mode: both;
+  				animation-fill-mode: both;
+  -webkit-animation-name: zfadeOutDown;
+  				animation-name: zfadeOutDown;
+}
+@-webkit-keyframes zfadeOutDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+}
+
+@keyframes zfadeOutDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+}

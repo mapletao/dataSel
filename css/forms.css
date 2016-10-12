@@ -1,0 +1,308 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, 'Microsoft YaHei';
+	font-size: 15px;
+	color: #666;
+	box-sizing: border-box;
+	outline: none;
+	-webkit-highlight: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+fieldset,
+img {
+	border: 0
+}
+
+ol,
+ul {
+	list-style: none none
+}
+
+a {
+	text-decoration: none
+}
+
+input {
+	-webkit-appearance: none;
+	border: none;
+	outline: none;
+}
+
+textarea {
+	resize: none; //文本框大小固定
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+th {
+	font-weight: normal;
+}
+
+.iconfont {
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	background-color: #edf1f2;
+}
+
+
+/*清除浮动*/
+
+.clearfix {
+	*+height: 1%;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9;
+	height: 65px;
+	width: 100%;
+	padding: 25px 0 15px 0;
+	border-bottom: #d3d7da 1px solid;
+	text-align: center;
+	background-color: #fafbfd;
+}
+
+.nav-l,
+.nav-r {
+	position: absolute;
+	bottom: 2px;
+	height: 35px;
+	padding: 0 20px;
+	font-size: 13px;
+	color: #677c98;
+	line-height: 35px;
+}
+
+.nav-l {
+	left: 0;
+}
+
+.nav-r {
+	right: 0;
+}
+
+.nav-l i,
+.nav-r i {
+	font-size: 20px;
+}
+
+.nav-r a {
+	display: inline-block;
+}
+
+.nav-title {
+	width: 100%;
+	height: 35px;
+	font-size: 20px;
+	line-height: 35px;
+}
+
+.nav-r p {
+	font-size: 16px;
+	color: #2f89f9;
+}
+
+.wrap {
+	width: 100%;
+	height: auto;
+	margin-top: 65px;
+}
+
+.form-borders,
+.form-group {
+	width: 100%;
+	height: auto;
+	padding: 10px 15px;
+	background-color: #fff;
+}
+
+.form-borders li,
+.form-group li {
+	width: 100%;
+	height: auto;
+}
+
+.form-borders li {
+	border-bottom: #d0d4d7 1px solid;
+}
+
+.form-borders p,
+.form-group p {
+	display: inline-block;
+	width: 100px;
+	line-height: 50px;
+	text-align: left;
+	color: #84888b;
+}
+
+.form-right {
+	position: relative;
+	float: right;
+	width: calc(100% - 100px);
+	text-align: right;
+}
+
+.form-borders li.border-none {
+	border-bottom-color: #fff;
+}
+
+.form-right input {
+	width: 100%;
+	line-height: 50px;
+	font-size: 15px;
+	padding-right: 20px;
+}
+
+.form-right input::-webkit-input-placeholder {
+	color: #000;
+}
+
+.form-right p {
+	width: 100%;
+	padding-right: 20px;
+	line-height: 50px;
+	color: #27282c;
+}
+
+.form-right .icon-arrowR,
+.form-right .icon-calendar {
+	position: absolute;
+	top: 15px;
+	right: 0;
+	font-size: 18px;
+	color: #84888b;
+}
+
+.form-right .icon-calendar {
+	font-weight: bold;
+}
+
+.two-lines > p,
+.two-lines .form-right {
+	float: none;
+	width: 100%;
+}
+
+.two-lines .form-right p {
+	text-align: left;
+}
+
+.two-lines .form-right .icon-you {
+	float: right;
+}
+
+.two-lines span {
+	color: #27282c;
+}
+
+.grey-m,.white-m {
+	width: 100%;
+	height: auto;
+	border-radius: 4px;
+	background-color: rgba(255, 255, 255, .4)
+}
+.grey-m{
+	margin-top: 10px;
+	border: #2f89f9 2px dashed;
+}
+.grey-m > p,.white-m  > p {
+	width: 100%;
+	height: auto;
+}
+.grey-m > p{
+	color: #2f89f9;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.grey-content ,.white-content{
+	width: 100%;
+	height: auto;
+	min-height: 26px;
+	padding: 0 10px 8px;
+	border-bottom: #cdd5d8 1px solid;
+}
+
+.grey-content p {
+	width: 100%;
+	height: auto;
+	line-height: 25px;
+	margin-bottom: 5px;
+	color: #8898a8;
+}
+
+.grey-content .icon-bookmark{
+	color: #2f89f9;
+}
+
+.grey-content .icon-close{
+	margin-left: 10px;
+	color: #8898a8;
+}
+
+.white-content textarea{
+	width: 100%;
+	height: 150px;
+	border: none;
+}
+.grey-bottom {
+	padding: 10px;
+	color: #2f89f9;
+	text-align: right;
+}
+
+.grey-bottom i {
+	margin-left: 5px;
+	font-size: 16px;
+	color: #2f89f9;
+}
+
+.double-btn {
+	position: relative;
+	float: right;
+	width: 50px;
+	height: 25px;
+	margin-top: 8px;
+	border-radius: 30px;
+	background-color: #ebe8e8;
+}
+
+.active {
+	background-color: #2f89f9;
+}
+
+.double-btn span {
+	display: block;
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	width: 23px;
+	height: 23px;
+	border-radius: 100%;
+	background-color: #fff;
+}
+
+.double-btn.active span {
+	left: 26px;
+}
+
+.font-blue {
+	color: #2f89f9;
+}

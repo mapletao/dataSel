@@ -1,0 +1,75 @@
+<!DOCTYPEhtmlPUBLIC"-//WAPFORUM//DTDXHTMLMobile1.0//EN""http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	<title>demo时间选择</title>
+	<link rel="stylesheet" href="css/forms.css">
+	<script src="js/jquery-1.12.3.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/dataSelect.css"/>
+	<script src="js/dataSelect.js"></script>
+</head>
+<body>
+	<div class="wrap">
+		<ul class="form-borders">
+			<li>
+				<p>开始时间</p>
+				<div class="form-right">
+					<input value="" class="mytest" readonly="readonly" name="appDateTime" id="beginTime" type="text">
+					<i class="iconfont icon-calendar"></i>
+				</div>
+			</li>
+			<li>
+				<p>结束时间</p>
+				<div class="form-right">
+					<input value="" class="mytest" readonly="readonly" name="appDateTime" id="endTime" type="text">
+					<i class="iconfont icon-calendar"></i>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="zmask hidden"></div>
+	<div class="timeSelectBox hidden">
+		<div class="z-header"><span class="z-header-l z-qc">取消</span>日期选择<span class="z-header-r z-next">下一步</span></div>
+		<div class="contain">
+			<div class="zmod">
+				<ul class="z-year">
+				</ul>
+			</div>
+			<div class="zmod">
+				<ul class="z-month">
+					<li>01</li>
+					<li>02</li>
+					<li>03</li>
+					<li>04</li>
+					<li>05</li>
+					<li>06</li>
+					<li>07</li>
+					<li>08</li>
+					<li>09</li>
+					<li>10</li>
+					<li>11</li>
+					<li>12</li>
+				</ul>
+			</div>
+			<div class="zmod">
+				<ul class="z-day">
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="timeSelectBox hidden">
+		<div class="z-header"><span class="z-header-l z-prev">上一步</span>时间选择<span class="z-header-r z-qd">确定</span></div>
+		<div class="contain">
+			<div class="zmod zt-hm">
+				<ul class="zt-hour">
+				</ul>
+			</div>
+			<div class="fh">:</div>
+			<div class="zmod zt-hm">
+				<ul class="zt-mins"></ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
